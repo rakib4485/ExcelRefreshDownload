@@ -3,12 +3,12 @@ require("dotenv").config();
 
 // Azure SQL connection config
 const config = {
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    server: process.env.DB_SERVER,
-    database: process.env.DB_DATABASE,
+    user: "sales360_qa_usr",
+    password: "C11o$4T0OwROx&TH=0+!",
+    server: "sql-msfsax04-01-shared-qa.database.windows.net",
+    database: sqldb-msfeax04-61-sales360-qa,
     options: {
-        encrypt: process.env.DB_ENCRYPT === "true",
+        encrypt: "true" === "true",
         trustServerCertificate: false,
     },
 };
